@@ -39,9 +39,17 @@ resource "libvirt_domain" "file_vms" {
   # ip = each.value.mgmt_ip
 }
 
+
+# create VMs using external data provider
 resource "libvirt_domain" "external_vms" {
   for_each = data.external.get_vm_data.result
   name = "${each.key}-ex"
+}
+
+# crete VMs using variables
+resource "libvirt_domain" "var_vms" {
+  for_each = toset(var.fixed_vm_list)
+  name = "${each.key}-var"
 }
 
 
