@@ -16,5 +16,5 @@ variable "vm_root_pass" {
 variable "fixed_vm_list" {
   type = list(string)
   description = "Fixed VM Name list"
-  default = ["vm-1", "vm-2", "vm-3"]
+  default = ["vm-1-var", "vm-2-var"]
 }

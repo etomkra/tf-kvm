@@ -17,4 +17,8 @@ TF vars can be supplied using:
 - using env variables `TF_VAR_variable_name`
 
 ## Variables precedence:
-`TF_VAR` > `.tfvars` > `.auto.tfvars` > `-var-file` > `-var` > cli 
+`TF_VAR` > `.tfvars` > `.auto.tfvars` > `-var-file` > `-var` > cli
+
+## Create multiple VMs
+NUmber of VMs can be defined in topology/vms.json
+In next releases file will be enriched, and will provide dynamic network configuration

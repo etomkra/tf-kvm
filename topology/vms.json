@@ -1,8 +1,8 @@
 {
 	"vms": 
 	[
-  		{ "hostname": "vm1", "mgmt_ip": "1.2.3.4" },
-  		{ "hostname": "vm2", "mgmt_ip": "1.2.3.5" }
+  		{ "hostname": "vm1.ex", "mgmt_ip": "1.2.3.4" },
+  		{ "hostname": "vm2.ex", "mgmt_ip": "1.2.3.5" }
 	]
 }
 
